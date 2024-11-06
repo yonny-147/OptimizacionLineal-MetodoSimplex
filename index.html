@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Método Simplex en JavaScript</title>
+  </head>
+  <body>
+    <div id="cabecera">
+      <h2>Optimización Lineal - Método Simplex</h2>
+      <form id="simplexForm">
+        <h3>Función Objetivo</h3>
+        <label for="objX">Coeficiente de x:</label>
+        <input type="number" id="objX" required />
+
+        <label for="objY">Coeficiente de y:</label>
+        <input type="number" id="objY" required />
+
+        <h3>Restricción 1</h3>
+        <label for="restric1X">Coeficiente de x:</label>
+        <input type="number" id="restric1X" required />
+
+        <label for="restric1Y">Coeficiente de y:</label>
+        <input type="number" id="restric1Y" required />
+
+        <label for="rhs1">Lado derecho:</label>
+        <input type="number" id="rhs1" required />
+
+        <h3>Restricción 2</h3>
+        <label for="restric2X">Coeficiente de x:</label>
+        <input type="number" id="restric2X" required />
+
+        <label for="restric2Y">Coeficiente de y:</label>
+        <input type="number" id="restric2Y" required />
+
+        <label for="rhs2">Lado derecho:</label>
+        <input type="number" id="rhs2" required />
+        <br />
+        <br />
+        <button type="button" onclick="solveSimplex()">Calcular</button>
+      </form>
+    </div>
+    <h3>Resultado: </h3>
+    <div id="resultado"></div>
+  </body>
+</html>
